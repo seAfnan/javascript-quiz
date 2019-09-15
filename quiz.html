@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="assets/images/author/avatar.png">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/metisMenu.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/slicknav.min.css">
+  <!-- others css -->
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/default-css.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/typeahead.css">
+  <style>
+    table, td, th {
+      border: 2px solid white;
+    }
+    .custom-btn:active {
+      background: blue;
+    }
+    .custom-btn:focus {
+      background: #28a745;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="preloader">
+      <div class="loader"></div>
+  </div>
+  <!-- preloader area end -->
+  <!-- page container area start -->
+  <div class="page-container">
+      <!-- sidebar menu area start -->
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <div class="logo">
+            <a style="color: white;" href="index.html"><h3>afnan</h3></a>
+          </div>
+        </div>
+        <div class="main-menu">
+          <div class="menu-inner">
+            <nav>
+              <ul class="metismenu" id="menu">
+                <li>
+                  <a style="color: #bfbfbf;" href="index.html"><i style="color: #bfbfbf;" class="ti-dashboard"></i><span>dashboard</span></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" id="passedClick" aria-expanded="true"><i class="fa fa-check-square-o"></i><span>Passed Tests</span></a>
+                  <ul class="collapse" id="passed">
+
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-exclamation"></i><span>Failed Tests</span></a>
+                  <ul class="collapse" id="failed">
+
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-plus-square"></i><span>Remaining Tests</span></a>
+                  <ul class="collapse" id="remaining">
+
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar menu area end -->
+      <!-- main content area start -->
+      <div class="main-content">
+        <!-- header area start -->
+        <div class="header-area">
+          <div class="col-md-12 col-sm-8 clearfix">
+            <div class="nav-btn pull-left" id="abc">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="row">
+              <div class="col-6"><div class="search-box pull-left">
+              <form action="index.html" name="searchh" id="searchh">
+                <input type="text" id="search" name="search" autofocus placeholder="Search Employee...">
+              </form>
+            </div></div>
+              <div class="col-5 mt-2" style="color: #779cf2;"><h5 id="quizName"></h5></div>
+            </div>
+          </div>
+        </div>
+        <!-- header area end -->
+        <!-- page title area start -->
+        <div class="page-title-area">
+          <div class="row align-items-center">
+            <div class="col-sm-12">
+              <div class="horizontal-menu">
+                <nav>
+                  <ul id="nav_menu">
+
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page title area end -->
+
+        <div class="main-content-inner">
+          <div class="card mt-3">
+            <div class="card-body" style="min-height: 280px;">
+              <div class="ml-3 mb-3"><h5 id="qType" style="color: #779cf2;" class="ml-4 mr-4"></h5></div>
+              <div class="row ml-4 mr-4">
+                <div class="col" id="testContainer"></div>
+              </div>
+
+            </div>
+            <div class="row mb-4">
+              <div class="col-5"></div>
+              <div class="col-1" id="refreshBtn"></div>
+              <div class="col-1">
+                <div id="nextBtn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main content area end -->
+      <!-- footer area start-->
+      <footer>
+        <div class="footer-area">
+          <p><mark style="cursor: pointer;">afnan</mark></p>
+          <p><mark style="cursor: pointer;"><a href="https://github.com/seAfnan">Github</a> | <a href="https://gist.github.com/seAfnan">Github Gist</a></mark></p>
+        </div>
+      </footer>
+      <!-- footer area end-->
+  </div>
+  <!-- page container area end -->
+
+  <!-- jquery latest version -->
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <!-- modernizr js -->
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- bootstrap 4 js -->
+  <script src="assets/js/vendor/bootstrap3-typeahead.js"></script>
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/owl.carousel.min.js"></script>
+  <script src="assets/js/vendor/metisMenu.min.js"></script>
+  <script src="assets/js/vendor/jquery.slimscroll.min.js"></script>
+  <script src="assets/js/vendor/jquery.slicknav.min.js"></script>
+
+  <script src="assets/js/vendor/plugins.js"></script>
+  <script src="assets/js/vendor/scripts.js"></script>
+  <script src="assets/js/quiz.js" type="text/javascript"></script>
+  
+</body>
+</html>
